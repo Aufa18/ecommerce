@@ -37,7 +37,7 @@ const HomeBanner = ({ className }: HomeBannerProps) => {
       {/* Bagian Kanan: Gambar Subjek/Produk */}
       <div className="hidden md:flex relative w-full h-[240px] sm:h-[280px] md:h-110 md:flex-1 justify-center md:justify-end items-end mt-4 md:mt-0">
         <Image
-          src="/banner/banner.png"
+          src="/banner/banner.webp"
           alt="Banner Ecommerce"
           fill
           priority

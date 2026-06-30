@@ -10,7 +10,7 @@ interface LogoProps {
 
 const Logo = ({ className, imageClassName }: LogoProps) => {
   return (
-    <Link href="/" className="inline-flex items-center">
+    <Link href="/" className="inline-flex">
       {/*
         1. Menambahkan 'relative' agar Next.js Image dengan properti 'fill' terkunci di dalam div ini.
         2. Menentukan tinggi (h-8 md:h-10) dan lebar (w-32 md:w-40) spesifik agar proporsi logo proporsional.
