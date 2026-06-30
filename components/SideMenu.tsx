@@ -19,7 +19,7 @@ const SideMenu:FC<SidebarProps> = ({ isOpen, onClose }) => {
     <div
       className={`fixed inset-y-0 h-screen left-0 z-50 w-full text-white/80 shadow-xl ${isOpen ? "translate-x-0" : "-translate-x-full"} hoverEffect`}
     >
-      <div ref={sidebarRef} className="min-w-72 max-w-96 bg-black h-screen p-10 border-r border-r-shop-primary flex flex-col gap-6">
+      <div ref={sidebarRef} className="min-w-72 max-w-96 bg-black h-screen p-10 flex flex-col gap-6">
         <div className="flex items-center justify-between gap-5">
           <Logo />
           <button
