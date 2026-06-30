@@ -57,11 +57,7 @@ const SideMenu: FC<SidebarProps> = ({ isOpen, onClose }) => {
                   href={item?.href}
                   key={item?.title}
                   onClick={onClose}
-                  className={`flex items-center px-4 py-3 rounded-xl font-medium tracking-wide text-sm transition-all duration-200 ${
-                    isActive
-                      ? "bg-zinc-950 text-white shadow-sm"
-                      : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
-                  }`}
+                  className={`flex items-center px-4 py-3 rounded-xl font-medium tracking-wide text-sm transition-all duration-200`}
                 >
                   {item?.title}
                 </Link>

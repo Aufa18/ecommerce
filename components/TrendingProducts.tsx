@@ -10,7 +10,7 @@ const TrendingProducts = () => {
   const trending = productData.slice(0, 4);
 
   return (
-    <div className="py-12">
+    <div className="py-8">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-zinc-950">Trending Now</h2>
         <Link href="/shop" className="text-sm font-semibold text-zinc-600 hover:text-zinc-950 transition-colors">
@@ -27,6 +27,7 @@ const TrendingProducts = () => {
                 src={product.image}
                 alt={product.name}
                 fill
+                priority
                 className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
               />
               <button className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-sm hover:text-red-500 transition-colors">

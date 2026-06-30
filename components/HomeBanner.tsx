@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
 import { ShoppingCart } from 'lucide-react';
+import Link from 'next/link';
 
 interface HomeBannerProps {
   className?: string;
@@ -13,7 +14,7 @@ const HomeBanner = ({ className }: HomeBannerProps) => {
     <div
       className={cn(
         "relative w-full overflow-hidden rounded-3xl bg-linear-to-r from-[#e5e5e5] to-[#de8547] flex flex-col sm:flex-row items-center justify-between sm:min-h-[340px] md:min-h-[360px]",
-        className
+        className,
       )}
     >
       {/* Bagian Kiri: Teks & Tombol */}
@@ -26,12 +27,12 @@ const HomeBanner = ({ className }: HomeBannerProps) => {
           selection of premium gear and lifestyle products.
         </p>
 
-        <Button
-          className="rounded-full px-8 py-6 text-base md:text-lg bg-zinc-900 hover:bg-zinc-800 text-white transition-all shadow-lg hover:shadow-xl"
-        >
-          <ShoppingCart className="w-5 h-5 mr-2 fill-white" />
-          Shop Now
-        </Button>
+        <Link href="/shop">
+          <Button className="rounded-full px-8 py-6 text-base md:text-lg bg-zinc-900 hover:bg-zinc-800 text-white transition-all shadow-lg hover:shadow-xl">
+            <ShoppingCart className="w-5 h-5 mr-2 fill-white" />
+            Shop Now
+          </Button>
+        </Link>
       </div>
 
       {/* Bagian Kanan: Gambar Subjek/Produk */}

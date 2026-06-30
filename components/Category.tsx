@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Category = () => {
   return (
-    <div className="py-12">
+    <div className="py-8">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-zinc-950">
         Shop by Category
       </h2>
@@ -14,7 +14,7 @@ const Category = () => {
       <div className="flex items-center gap-4 overflow-x-auto pb-4 scrollbar-hide px-4 md:px-0">
         {categoriesData.map((item, index) => (
           <Link
-            href={`/category/${item.title.toLowerCase().replace(/\s+/g, '-')}`}
+            href="/shop"
             key={item.title}
             className="relative flex-shrink-0 w-60 h-80 rounded-2xl overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-[1.02]"
           >
