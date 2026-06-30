@@ -16,7 +16,7 @@ const ShopByBrands = () => {
     <div className="py-12">
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-zinc-950">Shop By Brands</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-zinc-950">Shop by Brands</h2>
         <Link
           href="/shop"
           className="text-sm font-semibold text-zinc-900 hover:underline transition-all"

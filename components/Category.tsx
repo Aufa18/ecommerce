@@ -14,7 +14,9 @@ const Category = () => {
       <div className="flex items-center gap-4 overflow-x-auto pb-4 scrollbar-hide px-4 md:px-0">
         {categoriesData.map((item, index) => (
           <Link
-            href="/shop"
+            // 🟢 PERBAIKAN: Merakit URL dinamis menggunakan encodeURIComponent
+            // Contoh hasil: /shop?category=Tech%20%26%20Accessories
+            href={`/shop?category=${encodeURIComponent(item.title)}`}
             key={item.title}
             className="relative flex-shrink-0 w-60 h-80 rounded-2xl overflow-hidden group shadow-lg transition-transform duration-300 hover:scale-[1.02]"
           >
